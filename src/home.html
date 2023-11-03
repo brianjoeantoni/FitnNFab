@@ -9,7 +9,7 @@
 
     <title>Home</title>
   </head>
-  <body class="bg-gray-200 mb-16">
+  <body class="bg-gray-100 mb-16">
     <div
       id="member-detail"
       class="grid-detail p-4 bg-white border-solid border border-y-gray-300"
@@ -35,43 +35,43 @@
     </div>
     <div id="date" class="overflow-x-scroll flex justify-between m-4">
       <div
-        class="active text-center whitespace-nowrap font-semibold text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+        class="active text-center whitespace-nowrap font-bold text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
       >
         <p>Sun</p>
         <p>1 Okt</p>
       </div>
       <div
-        class="text-center whitespace-nowrap font-semibold text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
       >
         <p>Mon</p>
         <p>2 Okt</p>
       </div>
       <div
-        class="text-center whitespace-nowrap font-semibold text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
       >
         <p>Tue</p>
         <p>3 Okt</p>
       </div>
       <div
-        class="text-center whitespace-nowrap font-semibold text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
       >
         <p>Wed</p>
         <p>4 Okt</p>
       </div>
       <div
-        class="text-center whitespace-nowrap font-semibold text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
       >
         <p>Thu</p>
         <p>5 Okt</p>
       </div>
       <div
-        class="text-center whitespace-nowrap font-semibold text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
       >
         <p>Fri</p>
         <p>6 Okt</p>
       </div>
       <div
-        class="text-center whitespace-nowrap font-semibold text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
       >
         <p>Sat</p>
         <p>7 Okt</p>
@@ -102,6 +102,7 @@
         <div class="flex justify-center">
           <button
             class="text-xs text-white bg-pink-500 py-1 px-6 mt-2 mb-4 rounded-sm"
+            data-open-confirmation-modal
           >
             Cancel Class
           </button>
@@ -200,6 +201,32 @@
         <img src="/assets/Footer/Profile.png" alt="" />
       </div>
     </nav>
+
+    <dialog data-confirmation-modal class="modal-confirmation">
+      <div class="bg-white p-4 font-bold text-sm">
+        <p class="class-title text-purple-800">Confirmation</p>
+      </div>
+      <hr />
+      <div class="bg-white flex justify-center px-4 pt-6 text-sm rounded-b-lg">
+        <p class="font-semibold">
+          Are you sure you want to cancel this class schedule?
+        </p>
+      </div>
+      <div class="flex justify-around my-6">
+        <button
+          class="class-confirm-no-button bg-pink-500 text-white py-1 px-12 rounded-md"
+          data-no-close-modal
+        >
+          No
+        </button>
+        <button
+          class="class-confirm-yes-button bg-pink-500 text-white py-1 px-12 rounded-md"
+          data-yes-close-modal
+        >
+          Yes
+        </button>
+      </div>
+    </dialog>
   </body>
   <script src="/src/home.js"></script>
 </html>

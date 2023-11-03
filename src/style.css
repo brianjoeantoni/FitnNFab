@@ -7,11 +7,25 @@
 
 .active {
   border-color: #6b21a8 !important;
+  font-weight: 700;
 }
 
 .min-w-24 {
   min-width: 5.25rem;
 }
+
+.modal-confirmation,
+.modal-booked {
+  min-width: 100%;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+.modal-confirmation::backdrop,
+.modal-booked::backdrop {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 /* end custom style */
 
 /* Login Page */

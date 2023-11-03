@@ -9,7 +9,7 @@
 
     <title>Class</title>
   </head>
-  <body class="bg-gray-200 mb-16">
+  <body class="bg-gray-100 mb-16">
     <div class="flex gap-12 bg-purple-400 p-4 items-center">
       <img class="w-10 h-10" src="/assets/Logo.png" alt="" />
       <p class="text-white">FIT N FAB</p>
@@ -114,7 +114,7 @@
           </ol>
           <button
             class="class-book-button w-full bg-pink-500 text-white py-1 rounded-full"
-            onclick="window.location.href='#'"
+            data-open-confirmation-modal
           >
             Book Now
           </button>
@@ -138,6 +138,68 @@
         <img src="/assets/Footer/Profile.png" alt="" />
       </div>
     </nav>
+
+    <dialog data-confirmation-modal class="modal-confirmation">
+      <div class="bg-white p-4 font-bold text-sm">
+        <p class="class-title text-purple-800">Confirmation</p>
+      </div>
+      <hr />
+      <div class="bg-white flex justify-center px-4 pt-6 text-sm rounded-b-lg">
+        <p class="font-semibold">
+          Are you sure you want to confirm this class schedule?
+        </p>
+      </div>
+      <div class="flex justify-around my-6">
+        <button
+          class="class-confirm-no-button bg-pink-500 text-white py-1 px-12 rounded-md"
+          data-no-close-modal
+        >
+          No
+        </button>
+        <button
+          class="class-confirm-yes-button bg-pink-500 text-white py-1 px-12 rounded-md"
+          data-open-booked-modal
+          data-yes-close-modal
+        >
+          Yes
+        </button>
+      </div>
+    </dialog>
+
+    <dialog data-booked-modal class="modal-booked">
+      <div>
+        <div class="bg-white p-4 font-bold text-sm">
+          <p class="class-title text-purple-800">Booked</p>
+        </div>
+        <hr />
+        <div
+          class="bg-white flex flex-col justify-center p-4 font-semibold text-sm rounded-b-lg"
+        >
+          <div class="flex justify-center mt-6">
+            <img
+              class="w-28 h-28"
+              src="/assets/Class/SuccessCheck.png"
+              alt=""
+            />
+          </div>
+          <p class="my-6">
+            Successful, the Class has been scheduled for you at
+            <span class="class-booked-detail"
+              >Mon 2 Okt, 19.00 - 20.00 at QBIG BSD City!</span
+            >
+          </p>
+          <p>Current Balance : Rp<span class="current-balance">25.000</span></p>
+        </div>
+        <div class="flex justify-center py-6">
+          <button
+            class="class-confirm-no-button bg-pink-500 text-white py-1 px-12 rounded-md"
+            data-next-close-modal
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </dialog>
   </body>
-  <script src="/src/home.js"></script>
+  <script src="/src/class.js"></script>
 </html>
