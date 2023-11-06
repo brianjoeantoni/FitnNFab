@@ -10,8 +10,14 @@
   font-weight: 700;
 }
 
-.min-w-24 {
+.min-w-16 {
+  min-width: 4rem;
+}
+.min-w-21 {
   min-width: 5.25rem;
+}
+.min-w-28 {
+  min-width: 7rem;
 }
 
 .modal-confirmation,
