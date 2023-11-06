@@ -6,6 +6,7 @@
 }
 
 .active {
+  color: #ec4899;
   border-color: #6b21a8 !important;
   font-weight: 700;
 }
@@ -18,6 +19,9 @@
 }
 .min-w-28 {
   min-width: 7rem;
+}
+.max-w-28 {
+  max-width: 7rem;
 }
 
 .modal-confirmation,
@@ -73,4 +77,22 @@
   background-image: url("../assets/Home/Img\ Strong\ Nation.png");
   background-position: center; /* Center the image */
   background-size: cover;
+}
+
+/* Balance Page */
+.active,
+btn:hover {
+  color: #ec4899;
+  border-color: #6b21a8;
+}
+
+.grid-balance {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 350px) {
+  .grid-balance {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
