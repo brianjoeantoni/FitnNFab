@@ -55,19 +55,6 @@
 }
 
 /* Home Page */
-.grid-detail {
-  display: grid;
-  grid-template-areas: "image detail detail detail detail";
-}
-
-.logo-home {
-  grid-area: image;
-}
-
-.member-detail-home {
-  grid-area: detail;
-}
-
 .background-one {
   background-image: url("../assets/Class/Img\ PoundFit.png");
   background-position: center; /* Center the image */
@@ -95,4 +82,21 @@ btn:hover {
   .grid-balance {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+/* Profile Page */
+.version {
+  position: fixed;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+/* Profile Page > next pages */
+.profile-next-pages-btn {
+  width: 90%;
+  position: fixed;
+  top: 83%;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
