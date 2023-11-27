@@ -61,9 +61,9 @@
           </div>
         </div>
         <div class="flex flex-col gap-1">
-          <div class="flex justify-between">
+          <div class="flex justify-between mx-4 gap-1 text-xxs">
             <div
-              class="mx-4 p-2 flex items-center gap-2 w-max border border-solid rounded-lg border-gray-300"
+              class="p-2 flex items-center gap-2 w-max border border-solid rounded-lg border-gray-300"
             >
               <div>
                 <p>Morning</p>
@@ -72,7 +72,7 @@
               <img class="w-6 h-6" src="/assets/Class/sunrise.png" />
             </div>
             <div
-              class="mx-4 p-2 flex items-center gap-2 w-max border border-solid rounded-lg border-gray-300"
+              class="p-2 flex items-center gap-2 w-max border border-solid rounded-lg border-gray-300"
             >
               <div>
                 <p>Afternoon</p>
@@ -80,24 +80,22 @@
               </div>
               <img class="w-6 h-6" src="/assets/Class/sun.png" />
             </div>
-          </div>
-          <div class="flex justify-center">
             <div
-              class="mx-4 p-2 flex items-center gap-2 w-max border border-solid rounded-lg border-gray-300"
+              class="p-2 flex items-center gap-2 w-max border border-solid rounded-lg border-gray-300"
             >
               <div>
-                <p>Afternoon</p>
-                <p>12.00 - 05.00 PM</p>
+                <p>Night</p>
+                <p>06.00 - 10.00 PM</p>
               </div>
               <img class="w-6 h-6" src="/assets/Class/moon.png" />
             </div>
           </div>
         </div>
-        <div class="flex justify-end pb-2 pr-2">
+        <div class="flex justify-end p-4">
           <button
             class="flex text-white text-sm bg-pink-500 pb-0.5 px-6 rounded-md"
           >
-            Submit
+            Search
           </button>
         </div>
       </div>
@@ -129,7 +127,10 @@
                   <img class="w-5 h-5" src="/assets/Home/Moon.png" />
                   <p class="class-time">19:00</p>
                 </div>
-                <button class="flex items-center bg-pink-500 px-4 rounded-md">
+                <button
+                  onclick="window.location.href='detailClass.html'"
+                  class="flex items-center bg-pink-500 px-4 rounded-md"
+                >
                   Detail
                 </button>
               </div>
@@ -167,6 +168,29 @@
         </div>
       </div>
     </div>
+
+    <nav
+      class="fixed bottom-0 flex justify-between bg-white px-16 w-full border-solid border border-t-black"
+    >
+      <div class="w-12">
+        <a href="home.html">
+          <img class="ratio" src="/assets/Footer/Home.png" alt="" />
+        </a>
+      </div>
+      <div class="w-12">
+        <img class="ratio" src="/assets/Footer/Class.png" alt="" />
+      </div>
+      <div class="w-12">
+        <a href="balance.html">
+          <img src="/assets/Footer/Balance.png" alt="" />
+        </a>
+      </div>
+      <div class="w-12">
+        <a href="profile.html">
+          <img src="/assets/Footer/Profile.png" alt="" />
+        </a>
+      </div>
+    </nav>
   </body>
   <script src=""></script>
 </html>

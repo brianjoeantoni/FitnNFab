@@ -81,7 +81,7 @@
     <!-- change to user schedule -->
     <div id="schedule-detail">
       <p class="m-4 font-bold">Your Schedule</p>
-      <div class="bg-white m-4 rounded-lg">
+      <!-- <div class="bg-white m-4 rounded-lg">
         <div class="flex flex-wrap justify-between p-2 text-sm">
           <div class="flex items-center gap-2">
             <img class="w-6 h-6" src="/assets/Home/calendar.png" alt="" />
@@ -105,6 +105,68 @@
             data-open-confirmation-modal
           >
             Cancel Class
+          </button>
+        </div>
+      </div> -->
+      <div class="bg-white m-4 rounded-lg">
+        <!-- change to dynamic booking-id -->
+        <div id="" class="text-xs flex justify-between items-center gap-2 p-2">
+          <div class="flex items-center gap-2">
+            <img
+              class="w-10 h-10 rounded-lg"
+              src="../assets/Logo.png"
+              alt="logo"
+            />
+            <div class="flex flex-col gap-1">
+              <p>Booking ID : /*insert id*/</p>
+              <p>Pound Fit @QBIG BSD City /*insert location*/</p>
+              <p>Mon 2 Ok2, 19:00 /*insert date*/</p>
+            </div>
+          </div>
+          <button
+            class="flex items-center bg-pink-500 px-4 py-0.5 rounded-md text-white"
+          >
+            Detail
+          </button>
+        </div>
+        <hr class="bg-black" />
+        <div id="" class="text-xs flex justify-between items-center gap-2 p-2">
+          <div class="flex items-center gap-2">
+            <img
+              class="w-10 h-10 rounded-lg"
+              src="../assets/Logo.png"
+              alt="logo"
+            />
+            <div class="flex flex-col gap-1">
+              <p>Booking ID : /*insert id*/</p>
+              <p>Pound Fit @QBIG BSD City /*insert location*/</p>
+              <p>Mon 2 Ok2, 19:00 /*insert date*/</p>
+            </div>
+          </div>
+          <button
+            class="flex items-center bg-pink-500 px-4 py-0.5 rounded-md text-white"
+          >
+            Detail
+          </button>
+        </div>
+        <hr class="bg-black" />
+        <div id="" class="text-xs flex justify-between items-center gap-2 p-2">
+          <div class="flex items-center gap-2">
+            <img
+              class="w-10 h-10 rounded-lg"
+              src="../assets/Logo.png"
+              alt="logo"
+            />
+            <div class="flex flex-col gap-1">
+              <p>Booking ID : /*insert id*/</p>
+              <p>Pound Fit @QBIG BSD City /*insert location*/</p>
+              <p>Mon 2 Ok2, 19:00 /*insert date*/</p>
+            </div>
+          </div>
+          <button
+            class="flex items-center bg-pink-500 px-4 py-0.5 rounded-md text-white"
+          >
+            Detail
           </button>
         </div>
       </div>
@@ -137,7 +199,10 @@
                 <img class="w-5 h-5" src="/assets/Home/Moon.png" />
                 <p class="class-time">19:00</p>
               </div>
-              <button class="flex items-center bg-pink-500 px-4 rounded-md">
+              <button
+                onclick="window.location.href='detailClass.html'"
+                class="flex items-center bg-pink-500 px-4 rounded-md"
+              >
                 Detail
               </button>
             </div>
@@ -175,13 +240,30 @@
       </div>
     </div>
 
-    <!-- wip -->
     <div id="recommended-for-you">
       <p class="m-4 font-bold">Recommended for you</p>
-      <div class="flex gap-2 justify-between">
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+      <div
+        class="m-4 grid-container-recommended text-xs text-white font-semibold"
+      >
+        <div class="background-recommended-one rounded-l relative">
+          <p class="absolute bottom-0 m-2">
+            Start from Top Up <span class="text-pink-500"> 100.000 </span> got
+            rewards <span class="text-pink-500"> 20.000 </span>
+          </p>
+        </div>
+        <div class="background-recommended-two rounded-l relative">
+          <p class="absolute bottom-0 m-2">
+            get <span class="text-pink-500">10%</span> discount
+            <span class="text-green-500">@starbucks</span> with
+            <span class="text-pink-500">Latinas</span> Membership
+          </p>
+        </div>
+        <div class="background-recommended-three rounded-l relative">
+          <p class="absolute bottom-0 m-2">
+            Start from Top Up <span class="text-pink-500">100.000</span> got
+            rewards <span class="text-pink-500"> 20.000 </span>
+          </p>
+        </div>
       </div>
     </div>
 
@@ -192,13 +274,19 @@
         <img class="ratio" src="/assets/Footer/Home.png" alt="" />
       </div>
       <div class="w-12">
-        <img class="ratio" src="/assets/Footer/Class.png" alt="" />
+        <a href="class.html">
+          <img class="ratio" src="/assets/Footer/Class.png" alt="" />
+        </a>
       </div>
       <div class="w-12">
-        <img src="/assets/Footer/Balance.png" alt="" />
+        <a href="balance.html">
+          <img src="/assets/Footer/Balance.png" alt="" />
+        </a>
       </div>
       <div class="w-12">
-        <img src="/assets/Footer/Profile.png" alt="" />
+        <a href="profile.html">
+          <img src="/assets/Footer/Profile.png" alt="" />
+        </a>
       </div>
     </nav>
 

@@ -24,6 +24,10 @@
   max-width: 7rem;
 }
 
+.text-xxs{
+  font-size: 10px;
+}
+
 .modal-confirmation,
 .modal-booked {
   min-width: 100%;
@@ -56,7 +60,7 @@
 
 /* Home Page */
 .background-one {
-  background-image: url("../assets/Class/Img\ PoundFit.png");
+  background-image: url("../assets/Home/Img\ PoundFit.png");
   background-position: center; /* Center the image */
   background-size: cover;
 }
@@ -64,6 +68,40 @@
   background-image: url("../assets/Home/Img\ Strong\ Nation.png");
   background-position: center; /* Center the image */
   background-size: cover;
+}
+
+.grid-container-recommended {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-areas: "one two three";
+}
+
+.background-recommended-one {
+  background-image: url("../assets/Home/Recommended/1.png");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  border-radius: 4px;
+  min-height: 150px;
+  min-width: 75px;
+  grid-area: one;
+}
+.background-recommended-two {
+  background-image: url("../assets/Home/Recommended/2.png");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  border-radius: 4px;
+  min-height: 150px;
+  min-width: 75px;
+  grid-area: two;
+}
+.background-recommended-three {
+  background-image: url("../assets/Home/Recommended/3.png");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  border-radius: 4px;
+  min-height: 150px;
+  min-width: 75px;
+  grid-area: three;
 }
 
 /* Balance Page */
